@@ -105,6 +105,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <TelanganaMapThumbnail
                   className="w-full h-full object-contain"
                   alt="Telangana 33 Districts Administrative Map"
+                  showLabels={true}
                 />
               </div>
               <div className="text-[11px] font-mono text-slate-600 font-medium">
