@@ -1,0 +1,6 @@
+{
+  "name": "El Niño × Telangana: Statistical Analysis",
+  "description": "Statistical analysis of ENSO, monsoon rainfall, temperature, and agricultural productivity in Telangana, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
