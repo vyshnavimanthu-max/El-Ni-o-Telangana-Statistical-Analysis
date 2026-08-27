@@ -3,6 +3,8 @@ import { Database, BookOpen, Layers, CheckCircle2, AlertCircle, ShieldCheck } fr
 import { ResearchDatasetState } from '../types/dataset';
 import { AutoUpdateControl } from './AutoUpdateControl';
 
+import { TelanganaMapThumbnail } from './TelanganaMapThumbnail';
+
 interface HeaderProps {
   datasetState: ResearchDatasetState;
   onOpenDatasetModal: () => void;
@@ -27,12 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-3 text-left group cursor-pointer focus:outline-none"
           >
             <div className="w-11 h-11 rounded-lg bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-xs group-hover:border-teal-400 transition-colors overflow-hidden shrink-0">
-              <img
-                src="/telangana_map.jpg"
-                alt="Telangana District Map"
-                className="w-full h-full object-contain"
-                referrerPolicy="no-referrer"
-              />
+              <TelanganaMapThumbnail className="w-full h-full object-contain" />
             </div>
             <div>
               <div className="flex items-center gap-2">

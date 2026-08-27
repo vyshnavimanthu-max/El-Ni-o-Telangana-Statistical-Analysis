@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Navigation, TabId } from './components/Navigation';
 import { DatasetImportModal } from './components/DatasetImportModal';
 import { AutoUpdateModal } from './components/AutoUpdateModal';
+import { TelanganaMapThumbnail } from './components/TelanganaMapThumbnail';
 import { PageMetadataFooter } from './components/PageMetadataFooter';
 import { LandingPage } from './pages/LandingPage';
 import { OverviewPage } from './pages/OverviewPage';
@@ -213,12 +214,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-100 pb-4">
             <div className="flex items-center gap-3 text-center md:text-left">
               <div className="w-8 h-8 rounded-md bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-2xs overflow-hidden shrink-0">
-                <img
-                  src="/telangana_map.jpg"
-                  alt="Telangana District Map"
-                  className="w-full h-full object-contain"
-                  referrerPolicy="no-referrer"
-                />
+                <TelanganaMapThumbnail className="w-full h-full object-contain" />
               </div>
               <div>
                 <strong className="text-slate-800 block text-xs">

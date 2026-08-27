@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { TabId } from '../components/Navigation';
 import { ResearchDatasetState } from '../types/dataset';
+import { TelanganaMapThumbnail } from '../components/TelanganaMapThumbnail';
 
 interface LandingPageProps {
   onNavigate: (tab: TabId) => void;
@@ -101,11 +102,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="lg:col-span-4 flex justify-center">
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 shadow-xs max-w-[280px] w-full text-center">
               <div className="aspect-square w-full rounded-lg overflow-hidden border border-slate-200 bg-white p-2 mb-2 flex items-center justify-center shadow-2xs">
-                <img
-                  src="/telangana_map.jpg"
-                  alt="Telangana 33 Districts Administrative Map"
+                <TelanganaMapThumbnail
                   className="w-full h-full object-contain"
-                  referrerPolicy="no-referrer"
+                  alt="Telangana 33 Districts Administrative Map"
                 />
               </div>
               <div className="text-[11px] font-mono text-slate-600 font-medium">

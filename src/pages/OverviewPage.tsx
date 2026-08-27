@@ -12,6 +12,7 @@ import { EnsoVsYieldChart } from '../charts/EnsoVsYieldChart';
 import { CorrelationMatrix } from '../charts/CorrelationMatrix';
 import { EnsoPhasesComparison } from '../charts/EnsoPhasesComparison';
 import { TelanganaDistrictMap } from '../maps/TelanganaDistrictMap';
+import { TelanganaMapThumbnail } from '../components/TelanganaMapThumbnail';
 import { calculateMean } from '../statistics/engine';
 
 interface OverviewPageProps {
@@ -71,12 +72,7 @@ export const OverviewPage: React.FC<OverviewPageProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg border border-slate-200 bg-slate-50 p-1 shadow-2xs shrink-0 overflow-hidden flex items-center justify-center">
-              <img
-                src="/telangana_map.jpg"
-                alt="Telangana District Map"
-                className="w-full h-full object-contain rounded"
-                referrerPolicy="no-referrer"
-              />
+              <TelanganaMapThumbnail className="w-full h-full object-contain rounded" />
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
